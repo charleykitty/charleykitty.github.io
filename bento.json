@@ -2,7 +2,7 @@
   "food":[
     {
       "name":"spicy ahi bowl",
-      "price":32.67,
+      "price":10.29,
       "pounds":1,
       "sides":[
       "unagi sauce",
@@ -12,11 +12,11 @@
     },
     
     {
-      "name":"soft shelled crab",
-      "price":32.67,
+      "name":"shoyu poke bowl",
+      "price":10.29,
       "pounds":1,
       "sides":[
-      "mac salad",
+      "onion",
       "rice",
       "ginger"
       ]
