@@ -1,11 +1,11 @@
 {
   "food":[
     {
-      "name":"soft shelled crab",
+      "name":"spicy ahi bowl",
       "price":32.67,
       "pounds":1,
       "sides":[
-      "mac salad",
+      "unagi sauce",
       "rice",
       "ginger"
       ]
