@@ -1,0 +1,55 @@
+h1 {
+  font-family:arial;
+  font-size:50px;
+}
+#spicy{
+ font-family:arial;
+  background-color: red;
+  width: 25vw;
+  height: 40vh;
+  float: left;
+  margin: 50px;
+}
+
+#shoyu{
+  font-family:arial;
+  background-color: orange;
+  width: 25vw;
+  height: 40vh;
+  float: left;
+  margin: 50px;
+}
+#salt{
+  font-family:arial;
+  background-color: yellow;
+  width: 25vw;
+  height: 40vh;
+  float: left;
+  margin: 50px;
+}
+#salad{
+ font-family:arial;
+  background-color: green;
+  width: 25vw;
+  height: 40vh;
+  float: left;
+  margin: 50px;
+}
+#salad1{
+ font-family:arial;
+  background-color: blue;
+  width: 25vw;
+  height: 40vh;
+  float: left;
+  margin: 50px;
+}
+#salad2{
+ font-family:arial;
+  background-color: purple;
+  width: 25vw;
+  height: 40vh;
+  float: left;
+  margin: 50px;
+}
+
+
