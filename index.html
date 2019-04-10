@@ -21,13 +21,16 @@
   var h = window.innerHeight;
   var jumper = new jumper();
   var obst = new obst();
+      let bg;
+      let y = 0;
            
 
     function setup() {
+       bg = loadImage('pixel-landscape.png');
       createCanvas(w,h);
     }
     function draw() {
-      background(0);
+      background(bg);
       jumper.show();
       jumper.update();
       obst.show();
