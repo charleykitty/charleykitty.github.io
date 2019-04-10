@@ -22,61 +22,10 @@
   var w = window.innerWidth;
   var h = window.innerHeight;
   var jumper = new jumper();
+  var obst = new obst();
   let bg;
-  
-      function setup() {
-        bg = loadImage('<html>
-  
-<head>
-  
-<script src="p5.min.js"></script>
-<script src="p5.collide2d.min.js"></script>
-<script src="jumper.js"></script>
-<script src="rect.js"></script>
-<script src="rect2.js"></script>
-
-    <style>
-      body {
-        overflow: hidden;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
-  </head>
-  <body>
-   
-    <script>
-  var w = window.innerWidth;
-  var h = window.innerHeight;
-  var jumper = new jumper();
-  let bg;
-  
-      function setup() {
-        bg = loadImage('pixel-landscape.png');
-      createCanvas(w,h);
-    }
-    function draw() {
-      background(bg);
-      jumper.show();
-      jumper.update();
-      obst.show();
-      obst.update();
-      obst.lose();
-      obst1.show();
-      obst1.update();
-      obst1.lose();
-        
-       if(hit == true){
-       noLoop();
-       window.alert("you lose");
-       
-     }
-    }
-    </script>
-    
-  </body>
-</html>
-.png');
+    function setup() {
+      bg = loadImage('pixel-landscape.png');
       createCanvas(w,h);
     }
     function draw() {
