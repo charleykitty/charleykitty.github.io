@@ -22,6 +22,10 @@
       
     }
    }
-       
-    
- } //object ends here
+ this.kill = function() {
+   if(hit === true) {
+     noLoop();
+   }
+ }
+ }
+ //object ends here
