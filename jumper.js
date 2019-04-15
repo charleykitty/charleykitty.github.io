@@ -1,5 +1,3 @@
-   //this is the start of "flappy bird" the ball can move up and down based off the spacebar and falls when you dont hit the space bar
-
     function jumper() {
       this.x = 50;
       this.y = 0;
@@ -30,8 +28,7 @@
    }
  } //object ends here
   function keyPressed() {
-  if(keyCode === 32)
+  if(keyCode === 32) {
   jumper.up();
   }
-  
-  
+}
