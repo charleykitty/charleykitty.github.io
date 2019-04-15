@@ -5,6 +5,7 @@
 <script src="p5.min.js"></script>
 <script src="jumper.js"></script>
 <script src="rect.js"></script>
+  <script src="p5.collide2d.min.js"></script>
 
     <style>
       body {
@@ -23,6 +24,7 @@
   var obst = new obst();
       let bg;
       let y = 0;
+      var hit = false;
            
 
     function setup() {
@@ -35,6 +37,7 @@
       jumper.update();
       obst.show();
       obst.update();
+      hit = collideRectCircle(obst.x,obst.y,220,20,jumper.x,jumper.y,50,50);
     }
     </script>
   </body>
