@@ -1,4 +1,4 @@
-    function obst() {
+       function obst() {
       this.rand = Math.floor(Math.random() * 700)
       this.x = w;
       this.y = h - this.rand;
