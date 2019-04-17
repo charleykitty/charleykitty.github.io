@@ -6,8 +6,7 @@
       this.velocity = 0;//velocity of player
                 
       this.show = function() {
-        fill(color('pink'));
-        ellipse(this.x,this.y,50,50);
+        image(witch, this.x, this.y, 360,360);
       }
       this.up = function() {
         this.velocity += this.lift; //jumping function
