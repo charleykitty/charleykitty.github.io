@@ -1,26 +1,34 @@
-    function obst1() {
-      this.rand = Math.floor(Math.random() * 700)
-      this.x = w;
-      this.y = h - this.rand;
-      this.gravity = 1;
-      this.velocity = 0;
-    
-      
+    function jumper() {
+      this.x = 50;
+      this.y = 0;
+      this.gravity = 0.5; //the force of gravity
+      this.lift = -10; //the opposing force of gravity
+      this.velocity = 0;//velocity of player
+                
       this.show = function() {
-        fill(color('white'));
-        rect(this.x,this.y,220,20);
+        fill(color('pink'));
+        ellipse(this.x,this.y,50,50);
+      }
+      this.up = function() {
+        this.velocity += this.lift; //jumping function
+      }
       
-   }
-   this.update = function() {
-    this.velocity += this.gravity; //gravity applied when not jumping
-    this.x -= this.velocity;
-    if(this.x < 0){
-      this.rand = Math.floor(Math.random() * 700)
-      this.x = w;
-      this.y = h - this.rand;
+      this.update = function() {
+        this.velocity += this.gravity; //gravity applied when not jumping
+        this.y += this.velocity;
+        this.velocity *=0.8; //air resistance
+        if(this.y > h) { //jumper hits floor
+        this.y = h;
+        this.velocity = 0;
+      }
+      if(this.y < 0) { //jumper hit the ceiling
+      this.y = 0;
       this.velocity = 0;
-      
-    }
+     }
    }
-    
  } //object ends here
+  function keyPressed() {
+  if(keyCode === 32) {
+  jumper.up();
+  }
+}
