@@ -6,7 +6,7 @@
       this.velocity = 0;//velocity of player
                 
       this.show = function() {
-        image(witch, this.x, this.y, 360,360);
+        image(witch, this.x, this.y, 200,200);
       }
       this.up = function() {
         this.velocity += this.lift; //jumping function
