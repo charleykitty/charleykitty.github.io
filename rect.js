@@ -45,7 +45,7 @@ function obst1() {
    this.update = function() {
     this.velocity += this.gravity; //gravity applied when not jumping
     this.x -= this.velocity;
-    if(this.x < -220){
+    if(this.x < 0){
       this.rand = Math.floor(Math.random() * 700)
       this.x = w;
       this.y = h - this.rand;
