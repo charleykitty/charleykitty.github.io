@@ -17,8 +17,12 @@
 </head>
 
 <body>
+<button onclick="reload()">reset</button>
 
   <script>
+     function reload() {
+  location.reload();
+}
     var w = window.innerWidth;
     var h = window.innerHeight;
     var jumper = new jumper();
@@ -40,8 +44,7 @@
       clear();
       background(bg);
       textSize(20);
-      text("score: " + number, 10, 95);
-      text("press R to reload", 10, 65)
+      text("score: " + number, 10, 65);
       text("avoid the crows by pressing the space bar ", 10, 35);
 
       jumper.show();
