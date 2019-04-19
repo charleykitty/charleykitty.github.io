@@ -7,8 +7,7 @@ function obst() {
     
       
       this.show = function() {
-        fill(color('white'));
-        rect(this.x,this.y,220,20);
+          image(cat, this.x, this.y, 384,352);
       
    }
    this.update = function() {
@@ -38,8 +37,7 @@ function obst1() {
     
       
       this.show = function() {
-        fill(color('white'));
-        rect(this.x,this.y,220,20);
+         image(cat, this.x, this.y, 384,352);
       
    }
    this.update = function() {
