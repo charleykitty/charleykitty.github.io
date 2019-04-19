@@ -28,10 +28,11 @@
     var hit = false;
     var hit2 = false;
     var witch;
-
+    var cat;
     function setup() {
       bg = loadImage('pixel-landscape.png');
       witch = loadImage('witch.gif');
+      cat = loadImage('cat.gif');
       createCanvas(w, h);
     }
 
@@ -48,8 +49,8 @@
       obst1.show();
       obst1.update();
 
-      hit = collideRectCircle(obst.x, obst.y, 220, 20, jumper.x, jumper.y, 50, 50);
-      hit2 = collideRectCircle(obst1.x, obst1.y, 220, 20, jumper.x, jumper.y, 50, 50);
+      hit = collideRectCircle(obst.x, obst.y, 384, 352, jumper.x, jumper.y, 298, 212);
+      hit2 = collideRectCircle(obst1.x, obst1.y, 384, 352, jumper.x, jumper.y, 298, 212);
 
     }
   </script>
