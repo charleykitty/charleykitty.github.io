@@ -23,6 +23,10 @@
      function reload() {
   location.reload();
 }
+   function preload() {
+  soundFormats('mp3', 'ogg');
+  mySound = loadSound('assets/doorbell.mp3');
+}
     var w = window.innerWidth;
     var h = window.innerHeight;
     var jumper = new jumper();
@@ -38,6 +42,8 @@
       witch = loadImage('witch.gif');
       cat = loadImage('cat.gif');
       createCanvas(w, h);
+      mySound.setVolume(0.1);
+      mySound.play();
     }
 
     function draw() {
