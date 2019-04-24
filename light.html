@@ -4,6 +4,10 @@
    </head>
     <body>
       <script>
+      var img;
+      function preload() {
+        img = loadImage('texture.html')
+      }
         function setup() {
           createCanvas(window.innerWidth,window.innerHeight,WEBGL)
         }
@@ -17,6 +21,7 @@
           noStroke();
           rotateX(mouseX/500);
           rotateY(mouseY/500);
+          texture(img);
           box(300);
           
         }
