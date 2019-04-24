@@ -20,9 +20,11 @@
           specularMaterial(255);
           noStroke();
           rotateX(mouseX/500);
-          rotateY(mouseY/500);
+          rotateY(mouseY/500);rotateX(frameCount * 0.01);
+          rotateY(frameCount * 0.01);
+          torus(200,64,200,200);
           texture(img);
-          box(300);
+          
           
         }
       </script>
