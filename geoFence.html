@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <script src = "p5.min.js"></script>
+    
+  </head>
+  <body>
+    <script>
+      var fence;
+      var polygon = [
+        {lat: 21.312016, lon: -157.838460} ,  //top left
+        {lat: 21.312036, lon: -157.838369} ,  //top right
+        {lat: 21.311851, lon: -157.838257} ,  //bottom right
+        {lat: 21.311806, lon: -157.838380}    //bottom left
+];
+       function setup() {
+         if(goCheck() == true) {
+           console.log("Geolocation is true");
+         }
+         else{
+           console.log("not avail");
+         }
+         fence = new geoFencePolygon(polygon, insideTheFence, 'mi');
+         fenceOptions = {
+           enableHighAccuracy: true,
+           timeout:2000
+         }
+       }
+    </script>
+  </body>
+</html>
