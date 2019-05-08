@@ -8,10 +8,12 @@
     <script>
     var ax;
     var ay;
+    var w = window.innerWidth;
+    var h = window.innerHeight;
     var arrayX = [];
     var arrayY = [];
       function setup() {
-        createCanvas(window.innerWidth, window.innerHeight);
+        createCanvas(w,h);
       }
       function draw() {
         ax = accelerationX;
